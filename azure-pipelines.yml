@@ -10,8 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
- - task: AzureResourceManagerTemplateDeployment@3
-   inputs:
+  
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
      deploymentScope: 'Resource Group'
      azureResourceManagerConnection: 'ARM-pipeline-conn'
      subscriptionId: 'acdef38a-4092-47ca-9f2c-f296f95f5a5b'
